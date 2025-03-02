@@ -1,71 +1,86 @@
-export default function Home() {
-  return (
-    <div class="portfolio-main">
-        <header>
-            <div class="container">
-                <nav>
-                    <div class="logo">
-                        {/* <a href="#"><img src="assets/images/logo.svg" alt="logo"></a> */}
-                    </div>
-                    <div class="toggle-bar">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="navigation-bar">
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">services</a></li>
-                            <li><a href="#">my work</a></li>
-                            <li><a href="#">blog</a></li>
-                            <li class="hire-btn"><a href="#">Hire me</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
+import Image from 'next/image';
+import { Header } from './component/Header';
 
-        <div class="main-content">
-            <div class="container">
-                <div class="main-content-wrapper">
-                    <div class="col-left">
-                        <span>Hi i am John Deo</span>
-                        <h1>Freelancer | Fullstack Developer</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nesciunt quasi vitae,
-                            quisquam ullam suscipit quos placeat iusto nihil, nam rerum? Vel nesciunt iste cum vero
-                            aspernatur maxime quo itaque? Laboriosam nesciunt quasi vitae,
-                            quisquam ullam suscipit quos</p>
-                        <a href="#" class="btn-main">
-                            See my work
-                            {/* <span> <img src="assets/images/arrow-right.svg" alt="arrow"></span> */}
-                        </a>
-                    </div>
-                    <div class="col-right">
-                        {/* <img src="assets/images/john.svg" alt="Display image"> */}
-                    </div>
-                </div>
-                <div class="experience-section">
-                    <div class="experience-inner">
-                        <div class="col">
-                            <h3>5 years</h3>
-                            <p>experience</p>
+export default function Home() {
+    return (
+        <div className="w-full min-h-screen h-auto">
+            <Header />
+            <div className="portfolio-main">
+                <div className="main-content px-5 md:px-48">
+                    <div className="container">
+                        <div className="main-content-wrapper h-auto md:h-[70vh] flex flex-col-reverse gap-8 md:gap-0 md:flex-row w-full items-center">
+                            <div className="col-left">
+                                <span className="text-base md:text-xl font-medium leading-normal mb-[10px] ">
+                                    Hi i am Ngô Hùng
+                                </span>
+                                <h1 className="font-bold text-3xl md:text-[40px] mb-4">
+                                    Freelancer | Fullstack Developer
+                                </h1>
+                                <p className="w-full md:w-[85%]">
+                                    With over 3 years of experience in software
+                                    development as a full-stack developer, I
+                                    have gained extensive skills and knowledge
+                                    in this field. I am proficient in developing
+                                    large-scale web applications, from backend
+                                    development using PHP and Node.js to
+                                    frontend development using JavaScript. I
+                                    specialize in implementing highly
+                                    maintainable modules and have expertise in
+                                    working with databases such as MySQL and
+                                    MongoDB. My experience also includes
+                                    optimizing code and queries to ensure high
+                                    performance. Additionally, I excel at
+                                    deploying user interfaces compatible across
+                                    multiple platforms. I have worked with
+                                    Agile/Scrum methodologies, possess team
+                                    management skills, and have experience in
+                                    gathering and communicating customer
+                                    requirements effectively.
+                                </p>
+                                <a href="#" className="btn-main block mt-8">
+                                    See my work
+                                    <span>
+                                        <Image
+                                            src="/images/arrow-right.svg"
+                                            width={5}
+                                            height={8}
+                                            alt="arrow right '>'"
+                                        />
+                                    </span>
+                                </a>
+                            </div>
+                            <div className="col-right w-full">
+                                <Image
+                                    src="/images/john.svg"
+                                    width={331}
+                                    height={397}
+                                    alt="col right"
+                                />
+                            </div>
                         </div>
-                        <div class="col">
-                            <h3>50+</h3>
-                            <p>Happy clients</p>
-                        </div>
-                        <div class="col">
-                            <h3>120+</h3>
-                            <p>Projects completed</p>
-                        </div>
-                        <div class="col">
-                            <h3>30+</h3>
-                            <p>Award won</p>
+                        <div className="experience-section p-0 md:p-10 rounded-xl mt-12 md:mt-0">
+                            <div className="experience-inner flex flex-col md:flex-row justify-between items-center">
+                                <div className="col">
+                                    <h3 className="font-bold mb-[5px] text-2xl">3 years +</h3>
+                                    <p className="font-light">experience</p>
+                                </div>
+                                <div className="col">
+                                    <h3 className="font-bold mb-[5px] text-2xl">50+</h3>
+                                    <p className="font-light">Happy clients</p>
+                                </div>
+                                <div className="col">
+                                    <h3 className="font-bold mb-[5px] text-2xl">120+</h3>
+                                    <p className="font-light">Projects completed</p>
+                                </div>
+                                <div className="col">
+                                    <h3 className="font-bold mb-[5px] text-2xl">30+</h3>
+                                    <p className="font-light">Award won</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-  );
+    );
 }
