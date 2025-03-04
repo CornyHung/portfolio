@@ -58,22 +58,73 @@ export default function Home() {
                                 />
                             </div>
                         </div>
+
+                        <h3 class="font-bold text-xl md:text-2xl mt-10 mb-5">Companies</h3>
+
                         <div className="experience-section p-0 md:p-10 rounded-xl mt-12 md:mt-0">
                             <div className="experience-inner flex flex-col md:flex-row justify-between items-center">
                                 <div className="col">
-                                    <h3 className="font-bold mb-[5px] text-2xl">3 years +</h3>
+                                    <Image
+                                        src="/images/john.svg"
+                                        width={100}
+                                        height={100}
+                                        alt="col right"
+                                    />
+                                </div>
+                                <div className="col">
+                                    <Image
+                                        src="/images/john.svg"
+                                        width={100}
+                                        height={100}
+                                        alt="col right"
+                                    />
+                                </div>
+                                <div className="col">
+                                    <Image
+                                        src="/images/john.svg"
+                                        width={100}
+                                        height={100}
+                                        alt="col right"
+                                    />
+                                </div>
+                                <div className="col">
+                                    <Image
+                                        src="/images/john.svg"
+                                        width={100}
+                                        height={100}
+                                        alt="col right"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="font-bold text-xl md:text-2xl mt-10 mb-5">Highlight</h3>
+                        <div className="experience-section p-0 md:p-10 rounded-xl mt-12 md:mt-6 mb-10">
+                            <div className="experience-inner flex flex-col md:flex-row justify-between items-center">
+                                <div className="col">
+                                    <h3 className="font-bold mb-[5px] text-2xl">
+                                        3 years +
+                                    </h3>
                                     <p className="font-light">experience</p>
                                 </div>
                                 <div className="col">
-                                    <h3 className="font-bold mb-[5px] text-2xl">50+</h3>
-                                    <p className="font-light">Happy clients</p>
+                                    <h3 className="font-bold mb-[5px] text-2xl">
+                                        10+
+                                    </h3>
+                                    <p className="font-light">Clients</p>
                                 </div>
                                 <div className="col">
-                                    <h3 className="font-bold mb-[5px] text-2xl">120+</h3>
-                                    <p className="font-light">Projects completed</p>
+                                    <h3 className="font-bold mb-[5px] text-2xl">
+                                        10+
+                                    </h3>
+                                    <p className="font-light">
+                                        Projects completed
+                                    </p>
                                 </div>
                                 <div className="col">
-                                    <h3 className="font-bold mb-[5px] text-2xl">30+</h3>
+                                    <h3 className="font-bold mb-[5px] text-2xl">
+                                        30+
+                                    </h3>
                                     <p className="font-light">Award won</p>
                                 </div>
                             </div>
