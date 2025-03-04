@@ -5,14 +5,14 @@ import { useRef, useEffect, useState } from 'react';
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const navRef = useRef(null);
+    const navRef = useRef<HTMLDivElement | null>(null)
 
     const onToggleNav = () => {
         setIsOpen((prev) => !prev);
     };
 
-    const handleClickOutside = (event) => {
-        if (navRef.current && !navRef.current.contains(event.target)) {
+    const handleClickOutside = (event: MouseEvent) => {
+        if (navRef.current && !navRef?.current?.contains(event.target as Node)) {
             setIsOpen(false);
         }
     };

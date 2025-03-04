@@ -59,7 +59,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <h3 class="font-bold text-xl md:text-2xl mt-10 mb-5">Companies</h3>
+                        <h3 className="font-bold text-xl md:text-2xl mt-10 mb-5">Companies</h3>
 
                         <div className="experience-section p-0 md:p-10 rounded-xl mt-12 md:mt-0">
                             <div className="experience-inner flex flex-col md:flex-row justify-between items-center">
@@ -98,7 +98,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <h3 class="font-bold text-xl md:text-2xl mt-10 mb-5">Highlight</h3>
+                        <h3 className="font-bold text-xl md:text-2xl mt-10 mb-5">Highlight</h3>
                         <div className="experience-section p-0 md:p-10 rounded-xl mt-12 md:mt-6 mb-10">
                             <div className="experience-inner flex flex-col md:flex-row justify-between items-center">
                                 <div className="col">
