@@ -37,7 +37,7 @@ export default function Home() {
                                     gathering and communicating customer
                                     requirements effectively.
                                 </p>
-                                <a href="#" className="btn-main block mt-8">
+                                {/* <a href="#" className="btn-main block mt-8">
                                     See my work
                                     <span>
                                         <Image
@@ -47,7 +47,39 @@ export default function Home() {
                                             alt="arrow right '>'"
                                         />
                                     </span>
-                                </a>
+                                </a> */}
+                                <ul className="social-contact flex items-center gap-3 mt-8">
+                                    <li>
+                                        <a className="github" href="#">
+                                            <Image
+                                                src="/images/tech/github.svg"
+                                                width={20}
+                                                height={20}
+                                                alt="github"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/profile.php?id=100010547141370&locale=vi_VN">
+                                            <Image
+                                                src="/images/tech/facebook.svg"
+                                                width={40}
+                                                height={40}
+                                                alt="facebook"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/ngo-hung-corny-716798214/">
+                                            <Image
+                                                src="/images/tech/linkedin.svg"
+                                                width={40}
+                                                height={40}
+                                                alt="linkedin"
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                             <div className="col-right w-full">
                                 <Image
@@ -59,7 +91,9 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <h3 className="font-bold text-xl md:text-2xl mt-10 mb-5">TechStack</h3>
+                        <h3 className="font-bold text-xl md:text-2xl mt-10 mb-5">
+                            TechStack
+                        </h3>
 
                         <div className="experience-section p-0 md:p-10 rounded-xl mt-12 md:mt-0">
                             <div className="experience-inner grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center justify-between items-center">
@@ -106,7 +140,9 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <h3 className="font-bold text-xl md:text-2xl mt-10 mb-5">Highlight</h3>
+                        <h3 className="font-bold text-xl md:text-2xl mt-10 mb-5">
+                            Highlight
+                        </h3>
                         <div className="experience-section p-0 md:p-10 rounded-xl mt-12 md:mt-6 mb-10">
                             <div className="experience-inner flex flex-col md:flex-row justify-between items-center">
                                 <div className="col">
