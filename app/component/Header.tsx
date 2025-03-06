@@ -5,14 +5,17 @@ import { useRef, useEffect, useState } from 'react';
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const navRef = useRef<HTMLDivElement | null>(null)
+    const navRef = useRef<HTMLDivElement | null>(null);
 
     const onToggleNav = () => {
         setIsOpen((prev) => !prev);
     };
 
     const handleClickOutside = (event: MouseEvent) => {
-        if (navRef.current && !navRef?.current?.contains(event.target as Node)) {
+        if (
+            navRef.current &&
+            !navRef?.current?.contains(event.target as Node)
+        ) {
             setIsOpen(false);
         }
     };
@@ -56,14 +59,6 @@ export const Header = () => {
                         }`}
                     >
                         <ul className="p-4 space-y-2 md:p-0 md:space-y-0 md:flex md:items-center text-center font-semibold">
-                            <li>
-                                <a
-                                    href="#"
-                                    className="block p-2 md:p-0 md:mx-3"
-                                >
-                                    About
-                                </a>
-                            </li>
                             <li>
                                 <a
                                     href="#"

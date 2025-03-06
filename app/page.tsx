@@ -6,9 +6,9 @@ export default function Home() {
         <div className="w-full min-h-screen h-auto">
             <Header />
             <div className="portfolio-main">
-                <div className="main-content px-5 md:px-48">
-                    <div className="container">
-                        <div className="main-content-wrapper h-auto md:h-[70vh] flex flex-col-reverse gap-8 md:gap-0 md:flex-row w-full items-center">
+                <div className="main-content px-5 lg:px-48">
+                    <div className="container m-auto">
+                        <div className="main-content-wrapper h-auto lg:h-[70vh] flex flex-col-reverse gap-8 md:gap-0 md:flex-row w-full items-center">
                             <div className="col-left">
                                 <span className="text-base md:text-xl font-medium leading-normal mb-[10px] ">
                                     Hi i am Ngô Hùng
@@ -59,13 +59,13 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <h3 className="font-bold text-xl md:text-2xl mt-10 mb-5">Companies</h3>
+                        <h3 className="font-bold text-xl md:text-2xl mt-10 mb-5">TechStack</h3>
 
                         <div className="experience-section p-0 md:p-10 rounded-xl mt-12 md:mt-0">
-                            <div className="experience-inner flex flex-col md:flex-row justify-between items-center">
+                            <div className="experience-inner grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center justify-between items-center">
                                 <div className="col">
                                     <Image
-                                        src="/images/john.svg"
+                                        src="/images/tech/PHP-logo.svg"
                                         width={100}
                                         height={100}
                                         alt="col right"
@@ -73,7 +73,7 @@ export default function Home() {
                                 </div>
                                 <div className="col">
                                     <Image
-                                        src="/images/john.svg"
+                                        src="/images/tech/nextjs.png"
                                         width={100}
                                         height={100}
                                         alt="col right"
@@ -81,7 +81,7 @@ export default function Home() {
                                 </div>
                                 <div className="col">
                                     <Image
-                                        src="/images/john.svg"
+                                        src="/images/tech/react-logo.svg"
                                         width={100}
                                         height={100}
                                         alt="col right"
@@ -89,7 +89,15 @@ export default function Home() {
                                 </div>
                                 <div className="col">
                                     <Image
-                                        src="/images/john.svg"
+                                        src="/images/tech/VUE-logo.png"
+                                        width={100}
+                                        height={100}
+                                        alt="col right"
+                                    />
+                                </div>
+                                <div className="col">
+                                    <Image
+                                        src="/images/tech/mysql-logo.svg"
                                         width={100}
                                         height={100}
                                         alt="col right"

@@ -119,6 +119,11 @@ a.btn-main:hover span {
     margin-bottom: 4px;
 }
 
+.experience-section img {
+    width: 100px;
+    height: 100px;
+}
+
 @media (min-width: 1200px) {
     .toggle-bar {
         display: none;
