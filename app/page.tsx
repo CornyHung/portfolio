@@ -123,7 +123,7 @@ export default function Home() {
                                 </div>
                                 <div className="col">
                                     <Image
-                                        src="/images/tech/VUE-logo.png"
+                                        src="/images/tech/Vue-logo.png"
                                         width={100}
                                         height={100}
                                         alt="col right"
