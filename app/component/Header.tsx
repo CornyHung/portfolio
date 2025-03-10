@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useRef, useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -60,20 +61,20 @@ export const Header = () => {
                     >
                         <ul className="p-4 space-y-2 md:p-0 md:space-y-0 md:flex md:items-center text-center font-semibold">
                             <li>
-                                <a
-                                    href="#"
+                                <Link
                                     className="block p-2 md:p-0 md:mx-3"
+                                    href="/project"
                                 >
                                     Project
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="#"
+                                <Link
                                     className="block p-2 md:p-0 md:mx-3"
+                                    href="/blog"
                                 >
                                     Blog
-                                </a>
+                                </Link>
                             </li>
                             <li className="md:ml-5">
                                 <a
