@@ -1,39 +1,28 @@
 {
-  "compilerOptions": {
-    "target": "ES6",
-    "moduleResolution": "Node",
-    "jsx": "preserve",
-    "baseUrl": "./",
-    "paths": {
-      "@components/*": [
-        "app/components/*"
-      ]
+    "compilerOptions": {
+        "target": "ES6",
+        "moduleResolution": "Node",
+        "jsx": "preserve",
+        "baseUrl": "./",
+        "paths": {
+            "@components/*": ["app/components/*"]
+        },
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": false,
+        "noEmit": true,
+        "incremental": true,
+        "module": "esnext",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ]
     },
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "noEmit": true,
-    "incremental": true,
-    "module": "esnext",
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
-  },
-  "include": [
-    "app",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "include": ["app", ".next/types/**/*.ts"],
+    "exclude": ["node_modules", "**/node_modules/*"]
 }

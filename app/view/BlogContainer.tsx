@@ -1,6 +1,6 @@
 const BlogContainer = () => {
     return <>
-        <div class="đâsd"></div>
+        <div class="container"></div>
         
     </>;
 };

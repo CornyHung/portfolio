@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const ProjectContainer = () => {
-  return (
-    <div>ProjectContainer</div>
-  )
-}
+    return <div>ProjectContainer</div>;
+};
 
-export default ProjectContainer
+export default ProjectContainer;
