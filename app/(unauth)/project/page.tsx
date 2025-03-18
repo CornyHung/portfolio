@@ -1,9 +1,12 @@
-import { Header } from '../../component/Header';
+import { Header } from '@components/Header';
+
 export default function Project() {
+
     return (
         <>
-        <Header />
+            <Header />
             <h1>Project</h1>
+
         </>
-    )
+    );
 }
