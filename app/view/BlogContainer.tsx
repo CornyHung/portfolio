@@ -1,8 +1,9 @@
 const BlogContainer = () => {
-    return <>
-        <div class="container"></div>
-        
-    </>;
+    return (
+        <>
+            <div className="container"></div>
+        </>
+    );
 };
 
 export default BlogContainer();
