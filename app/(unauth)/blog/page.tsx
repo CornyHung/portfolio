@@ -1,24 +1,17 @@
 import { Header } from '@components/Header';
 import { client } from 'app/service/apiClient';
+import { NameServiceApi } from '~/model/Enum/NameServiceApi';
+import { BlogContainer } from '~/view/blogs/BlogContainer';
 
 export default async function Blog() {
-    const {contents} = await  client.getList({ endpoint: 'blogs' });
+    const { contents } = await client.getList({
+        endpoint: NameServiceApi.PROJECT
+    });
 
-    console.log(contents);
-    
     return (
         <>
             <Header />
-            <h1>Blog</h1>
-
-            {contents.map((item) => (
-                <div key={item.id}>
-                    <h2>{item.title}</h2>
-                    <p>{item.description}</p>
-
-                    <div dangerouslySetInnerHTML={{ __html: item.content.editor }}></div>
-                </div>
-            ))}
+            <BlogContainer blogs={contents ?? []} />
         </>
     );
 }

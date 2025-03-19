@@ -63,6 +63,14 @@ export const Header = () => {
                             <li>
                                 <Link
                                     className="block p-2 md:p-0 md:mx-3"
+                                    href="/"
+                                >
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    className="block p-2 md:p-0 md:mx-3"
                                     href="/project"
                                 >
                                     Project

@@ -1,0 +1,12 @@
+.Editor {
+    width: 100%;
+    margin: auto;
+}
+.Editor > * + * {
+    margin-bottom: 16px;
+}
+
+.Editor img {
+    width: auto;
+    margin: auto;
+}
