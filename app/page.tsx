@@ -96,40 +96,32 @@ export default function Home() {
                         </h3>
 
                         <div className="experience-section p-0 md:p-10 rounded-xl mt-12 md:mt-0">
-                            <div className="experience-inner grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center justify-between items-center">
-                                <div className="col">
+                            <div className="experience-inner">
+                                <div className="col grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center justify-between items-center">
                                     <Image
                                         src="/images/tech/PHP-logo.svg"
                                         width={100}
                                         height={100}
                                         alt="col right"
                                     />
-                                </div>
-                                <div className="col">
                                     <Image
                                         src="/images/tech/nextjs.png"
                                         width={100}
                                         height={100}
                                         alt="col right"
                                     />
-                                </div>
-                                <div className="col">
                                     <Image
                                         src="/images/tech/react-logo.svg"
                                         width={100}
                                         height={100}
                                         alt="col right"
                                     />
-                                </div>
-                                <div className="col">
                                     <Image
                                         src="/images/tech/Vue-logo.png"
                                         width={100}
                                         height={100}
                                         alt="col right"
                                     />
-                                </div>
-                                <div className="col">
                                     <Image
                                         src="/images/tech/mysql-logo.svg"
                                         width={100}

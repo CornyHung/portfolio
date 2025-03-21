@@ -180,6 +180,35 @@ a.btn-main:hover span {
     }
 }
 
+@media (min-width: 1024px) {
+    .full-line-container::before {
+        content: '';
+        width: 16px;
+        height: 100%;
+        border: 1px solid #ff7999;
+        background: #edf7fa;
+        border-radius: 8px;
+        display: block;
+        position: absolute;
+        left: -30px;
+    }
+
+    .full-line-container .category-title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .full-line-container .category-title::before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        background: #ff7999;
+        display: block;
+    }
+}
+
 /* .portfolio-main {
     min-height: 100vh;
     background: linear-gradient(
