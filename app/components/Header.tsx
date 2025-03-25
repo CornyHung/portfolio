@@ -87,7 +87,7 @@ export const Header = () => {
                             <li className="md:ml-5">
                                 <a
                                     className="block font-medium py-[10px] px-8 bg-white rounded-full border-red-300 border-2 hover:bg-red-300 hover:text-white transition-all duration-300"
-                                    href="/images/hungns_cv.pdf"
+                                    href="HungNS_EN.pdf"
                                     download
                                 >
                                     Download Resume
